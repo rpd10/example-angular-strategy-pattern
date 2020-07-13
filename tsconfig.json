@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@example-angular-strategy-pattern/login": ["libs/login/src/index.ts"],
+      "@example-angular-strategy-pattern/my-feature": [
+        "libs/my-feature/src/index.ts"
+      ],
+      "@example-angular-strategy-pattern/auth": ["libs/auth/src/index.ts"],
+      "@example-angular-strategy-pattern/fancy-auth-provider": [
+        "libs/fancy-auth-provider/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

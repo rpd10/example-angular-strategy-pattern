@@ -1,0 +1,20 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "exampleAngularStrategyPattern",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "example-angular-strategy-pattern",
+      "kebab-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": ["!**/*"]
+  }
+}
