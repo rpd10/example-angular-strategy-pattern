@@ -1,9 +1,9 @@
 module.exports = {
-  testMatch: ['**/+(*.)+(spec|test).+(ts|js)?(x)'],
-  transform: {
-    '^.+\\.(ts|js|html)$': 'ts-jest',
-  },
-  resolver: '@nrwl/jest/plugins/resolver',
-  moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageReporters: ['html'],
+  projects: [
+    '<rootDir>/apps/demo',
+    '<rootDir>/libs/login',
+    '<rootDir>/libs/my-feature',
+    '<rootDir>/libs/auth',
+    '<rootDir>/libs/fancy-auth-provider',
+  ],
 };
